@@ -24,7 +24,6 @@ def get_audio_devices():
     return microphone, speaker
 
 def record_audio():
-    print(f"{sr.Microphone.list_microphone_names()} DAVO")
     recognizer = sr.Recognizer()
     microphone = sr.Microphone(device_index=1)
 
